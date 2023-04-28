@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="img/spotify-2015-logo-560E071CB7-seeklogo.com.png"
+      type="image/x-icon"
+    />
+    <title>Spotify Contato</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="cabeca">
+      <h1 class="musica">S<strong class="caixa-forte">POTIFY</strong></h1>
+    </header>
+
+    <nav class="nav-hor">
+      <ul>
+        <li><a class="active" href="contato.html">Contato</a></li>
+        <li><a href="index.html">Página Inicial</a></li>
+
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.php">Serviços</a></li>
+        <li><a href="novidades.php">Novidades</a></li>
+      </ul>
+    </nav>
+    <main>
+      <script>
+        function enviar() {
+          let n1 = document.getElementById("nome"),
+            i1 = document.getElementById("num");
+          c1 = document.getElementById("aceitar");
+          if (n1.value.trim() == "") {
+            alert("O nome é obrigatório");
+            return false;
+          }
+          if (i1.value.trim() == "") {
+            alert("A idade é obrigatória");
+            return false;
+          }
+          if (!c1.checked) {
+            alert("Concorde com os termos para prosseguir");
+            return false;
+          }
+          return true;
+        }
+      </script>
+      <h1 class="contato-um">FALE CONOSCO !</h1>
+
+      <article class="contato">
+        <form
+          action="mailto:office@spotify.com"
+          method="post"
+          onsubmit="return enviar()"
+        >
+          <label> Nome: </label>
+          <input type="text" name="Nome" id="nome" />&nbsp;&nbsp;
+          <br />
+          <br />
+          <label>Idade:</label>
+          <input type="number" name="Idade" id="num" /><br />
+          <input type="checkbox" name="c1" id="aceitar" value="S" />
+          Concordo com os termos do site<br />
+          <input type="submit" value="Enviar" />
+          <br />
+        </form>
+        <br />
+      </article>
+      <article class="tabela">
+        <table>
+          <tr>
+            <th>Nossas Redes Sociais</th>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://open.spotify.com/">Spotify</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://twitter.com/Spotify">Twitter</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.facebook.com/SpotifyBrasil">Facebook</a>
+            </td>
+          </tr>
+        </table>
+      </article>
+    </main>
+    <footer>
+      <p>2023 &copy; Feito por Beatriz Kloss</p>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

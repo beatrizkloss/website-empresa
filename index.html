@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="img/spotify-2015-logo-560E071CB7-seeklogo.com.png"
+      type="image/x-icon"
+    />
+    <title>Spotify Apresentação</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+  </head>
+  <!-- Barra de Navegação. -->
+  <body onresize="mudouTamanho()">
+    <header></header>
+    
+      <section>
+        <nav class="nav-bar">
+          <span
+            id="hamburguer"
+            class="material-icons md-36"
+            onclick="clickMenu()"
+            >menu</span
+          >
+          <ul id="itens">
+            <span id="logo" class="material-icons md-36">lyrics</span>
+            <li><a class="active" href="index.html">PÁGINA INICIAL</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="servicos.php">SERVIÇOS</a></li>
+            <li><a href="novidades.php">NOVIDADE</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+          </ul>
+        </nav>
+      </section>
+      <!-- Carrosel -->
+      <article class="conteudo">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-label="Slide 1"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class=""
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class=""
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="w-100 img-fluid"
+                src="img/Header_copy.png"
+                alt=""
+                height="550"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>SPOTIFY</h5>
+                <p>Seu Melhor App de Músicas</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="w-100 img-fluid"
+                src="img/3.png"
+                alt=""
+                height="550 "
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Escute Música Com Amigos</h5>
+                <p>
+                  No Spotify você pode escutar música junto de seus Amigos<br />
+                  em uma sessão em grupo, pelo celular ou tablet.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="w-100 img-fluid"
+                src="img/StreamOn_Generic-FTR-Header1.png"
+                alt=""
+                height="550 "
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>STREAM ON</h5>
+                <p>Venha ver as novidades para a nossa plataforma</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Main da Pagina -->
+        <main>
+        <article class="informacoes-principal">
+          <div
+            id="informacoes"
+            class="assunto m-3 d-flex justify-content-center"
+          >
+            <p class="assunto-principal-um">
+              <strong class="caixa-alta">S</strong>POTIFY
+              <strong class="segunda-caixa">FREE</strong>
+
+              <a href="servicos.php" id="apresentacao-link-um" class="btn"
+                >CLIQUE AQUI
+              </a>
+            </p>
+            <h2 class="assunto-principal-primeiro">
+              Escute milhões de <strong>Músicas</strong> e
+              <strong> Podcast </strong> de graça.
+            </h2>
+          </div>
+        </article>
+        <article class="informacoes-segundo">
+          <div
+            id="importante"
+            class="assunto m-3 d-flex justify-content-center"
+          >
+            <p class="assunto-principal-dois">
+              <strong class="caixa-alta">S</strong>POTIFY
+              <strong class="segunda-caixa">PREMIUN</strong>
+
+              <a href="servicos.php" id="apresentacao-link-dois" class="btn"
+                >CLIQUE AQUI
+              </a>
+            </p>
+            <h2 class="assunto-principal-segundo">
+              Ouça <strong>Músicas</strong> sem anúncios, na ordem que quiser
+              onde quiser.
+            </h2>
+          </div>
+        </article>
+        <article class="informacoes-terceiro">
+          <div id="novidades" class="assunto m-3 d-flex justify-content-center">
+            <p class="assunto-principal-tres">
+              <strong class="caixa-alta">S</strong>POTIFY
+              <strong class="segunda-caixa">NOVIDADES</strong>
+
+              <a href="novidades.php" id="apresentacao-link-tres" class="btn"
+                >CLIQUE AQUI
+              </a>
+            </p>
+            <h2 class="assunto-principal-terceiro">
+              Venha conhecer nossas <strong>Novidades</strong> e futuros
+              projetos!
+            </h2>
+          </div>
+        </article>
+      </article>
+    </main>
+    <!-- Fim da Pagina -->
+    <footer>
+      <p>2023 &copy; Feito por Beatriz Kloss</p>
+    </footer>
+    <!-- Script do Hamburguer -->
+    <script>
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
+        }
+      }
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+    </script>
+    <script src="js/jquery.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

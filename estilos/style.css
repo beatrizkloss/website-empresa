@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:ital,wght@0,600;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital@1&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+}
+main {
+  width: 90vw;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  padding-bottom: 100px;
+}
+/* pagina index*/
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #000000;
+  position: fixed;
+  height: 100%;
+}
+
+.nav-bar li a {
+  display: block;
+  color: #ffffff;
+  padding: 10px 8px;
+  text-decoration: none;
+  font-family: "Open Sans";
+  border-bottom: 1px solid #b3b0b0;
+}
+
+.nav-bar li a.active {
+  background-color: #056913;
+  color: white;
+}
+
+.nav-bar li a:hover:not(.active) {
+  background-color: #2ab707;
+  color: white;
+}
+span#hamburguer {
+  background-color: #000000;
+  padding: 10px;
+  width: 100%;
+  color: #2ab707;
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  top: 0%;
+}
+span#hamburguer:hover {
+  color: #056913;
+}
+span#logo {
+  color: #2ab707;
+  padding: 10px;
+  margin: 0%;
+}
+
+.conteudo {
+  margin-left: 15%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.informacoes-principal,
+.informacoes-segundo,
+.informacoes-terceiro {
+  padding: 0%;
+  margin: 0%;
+}
+div#informacoes,
+div#importante,
+div#novidades {
+  background-color: #000000;
+  border-radius: 10px;
+  font-family: "Alfa Slab One";
+  gap: 100px;
+  display: flex;
+  padding: 5%;
+  height: 50%;
+  box-shadow: 10px 10px 20px #000;
+}
+div#informacoes .caixa-alta,
+div#importante .caixa-alta,
+div#novidades .caixa-alta {
+  font-family: "Alfa Slab One";
+  color: #2ab707;
+  font-size: 60px;
+}
+.segunda-caixa {
+  font-family: "Roboto Serif";
+  color: #2ab707;
+  font-size: 45px;
+
+  float: left;
+}
+div#informacoes strong,
+div#importante strong,
+div#novidades strong {
+  color: #2ab707;
+}
+.assunto-principal-um,
+.assunto-principal-dois,
+.assunto-principal-tres {
+  font-size: 50px;
+  padding: 15px;
+  color: #ffffff;
+}
+.assunto-principal-segundo,
+.assunto-principal-primeiro,
+.assunto-principal-terceiro {
+  flex: auto;
+  color: #ffffff;
+  font-family: "Alfa Slab One";
+  padding: 10%;
+  margin: 0%;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 200;
+}
+a#apresentacao-link-um,
+a#apresentacao-link-dois,
+a#apresentacao-link-tres {
+  color: #feffff;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  border: 3px solid #ffffff;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #000000;
+  float: left;
+  margin-top: 10%;
+  align-self: flex-end;
+}
+a#apresentacao-link-um {
+  margin-top: 35%;
+  margin-left: -50%;
+}
+a#apresentacao-link-um:hover,
+a#apresentacao-link-dois:hover,
+a#apresentacao-link-tres:hover {
+  background-color: #2ab707;
+  border-color: #ffffff;
+}
+
+/*/ pagina sobre*/
+.nav-hor {
+  padding: 0%;
+}
+.nav-hor ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #000000;
+}
+.nav-hor li {
+  float: left;
+}
+
+.nav-hor li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Open Sans";
+}
+
+.nav-hor li a:hover {
+  background-color: #2ab707;
+}
+.nav-hor li a.active {
+  background-color: #056913;
+}
+.cabeca {
+  background-color: #000;
+  padding: 50px;
+  margin: 0px;
+  height: 20%;
+  text-align: left;
+}
+.musica {
+  padding: 0px;
+  font-size: 50px;
+  font-weight: 200;
+  font-family: "Alfa Slab One";
+  color: #ffffff;
+}
+.caixa-forte {
+  color: #2ab707;
+}
+
+article#sobre-empresa {
+  background-color: #000000;
+  border-radius: 5px;
+  font-family: "Alfa Slab One";
+  height: 10%;
+  padding: 0px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  box-shadow: 10px 10px 20px #000;
+}
+article#sobre-empresa h1 {
+  font-size: 20px;
+  font-family: "Alfa Slab One";
+  font-weight: 100;
+  padding: 30px;
+  color: #ffffff;
+}
+article#sobre-empresa strong {
+  color: #2ab707;
+}
+article#sobre-empresa img {
+  padding: 10px;
+  border-radius: 70px;
+
+  margin-top: -10px;
+  margin: 10px;
+}
+.fundador {
+  font-size: 40px;
+}
+/*pagina servicos*/
+.servicos-um,
+.novidades-um {
+  border-radius: 10px;
+  font-family: "Alfa Slab One";
+  height: 0%;
+  padding: 0px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  font-weight: 200;
+  border-radius: 5px;
+}
+.planos {
+  font-family: "Alfa Slab One";
+  color: #2ab707;
+  border-radius: 10px;
+}
+.gratis {
+  font-family: "Alfa Slab One";
+  color: #f7f7f7;
+  float: left;
+}
+
+.gratis strong,
+.novidades-evento strong,
+.contato-um {
+  color: #2ab707;
+  font-weight: 100;
+  font-family: "Alfa Slab One";
+}
+
+.plano-gratis,
+.novidades-evento {
+  background-color: #000;
+  margin-top: 0%;
+  height: 100%;
+  width: auto;
+  text-align: left;
+  padding: 5%;
+  margin: 0px;
+  box-shadow: 10px 10px 20px #000;
+}
+.plano-gratis p,
+.novidades-evento p {
+  font-size: 20px;
+  font-family: "Alfa Slab One";
+  color: #ffffff;
+  text-align: left;
+}
+/*pagina novidade*/
+.novidades-evento h1 {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Alfa Slab One";
+}
+.novidades {
+  font-family: "Alfa Slab One";
+  color: #2ab707;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-weight: 100;
+}
+/* pagina contato*/
+.contato,
+.tabela {
+  background-color: #323030;
+
+  font-family: "Alfa Slab One";
+  height: 10%;
+  padding: 0px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  padding: 5%;
+  box-shadow: 10px 10px 20px #000;
+}
+.tabela {
+  margin-top: 5%;
+}
+.contato form {
+  color: #ffffff;
+  font-family: "Alfa Slab One";
+  font-weight: 100;
+}
+label {
+  width: 100px;
+  padding: 0px;
+  float: center;
+  margin: 10px;
+}
+table {
+  font-family: "Alfa Slab One";
+  font-weight: 100;
+  border-collapse: collapse;
+  width: 20%;
+  background-color: #afafaf;
+  box-shadow: 10px 10px 30px #000;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #ceeec3;
+}
+footer {
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  color: #a8a8a8;
+  padding: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  article,
+  .carousel-inner {
+    width: 100%;
+    height: 40;
+    align-items: center;
+
+    left: 0;
+    padding: 1%;
+    margin-left: -75px;
+  }
+  .nav-bar {
+    background-color: #000;
+    margin-bottom: 40px;
+  }
+  .nav-bar ul {
+    width: 115%;
+    height: 60%;
+    display: none;
+    position: sticky;
+    top: 0;
+  }
+  .informacoes-principal,
+  .informacoes-segundo,
+  .informacoes-terceiro {
+    margin-left: -18%;
+    padding: 6%;
+  }
+
+  div#informacoes,
+  .assunto-principal-um,
+  .assunto-principal-primeiro,
+  div#novidades,
+  .assunto-principal-tres,
+  .assunto-principal-terceiro,
+  div#importante,
+  .assunto-principal-dois,
+  .assunto-principal-segundo {
+    width: 95%;
+    height: 50%;
+    align-items: left;
+    position: static;
+    left: 0;
+    padding: 1%;
+    margin-left: 100px;
+  }
+  .assunto-principal-um,
+  .assunto-principal-dois,
+  .assunto-principal-tres {
+    margin-left: 5%;
+    font-size: 200%;
+  }
+
+  .assunto-principal-primeiro,
+  .assunto-principal-segundo,
+  .assunto-principal-terceiro {
+    margin-top: 20%;
+    margin-left: -20%;
+    width: 50%;
+    font-size: 100%;
+  }
+  .segunda-caixa {
+    font-size: 100%;
+  }
+  a#apresentacao-link-um,
+  a#apresentacao-link-dois,
+  a#apresentacao-link-tres {
+    margin-top: 40%;
+    margin-left: 30%;
+
+    position: relative;
+    text-align: center;
+  }
+  span#hamburguer {
+    position: sticky;
+    width: 115%;
+  }
+  .nav-hor li {
+    float: none;
+  }
+
+  article#sobre-empresa img {
+    width: 100%;
+    height: auto;
+    margin-right: 10%;
+    border-radius: 40%;
+  }
+  article#sobre-empresa {
+    width: 90%;
+    height: 1%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  span#hamburguer {
+    display: none;
+    position: sticky;
+  }
+  .nav-bar {
+    display: block;
+  }
+  main {
+    width: 768px;
+  }
+}
